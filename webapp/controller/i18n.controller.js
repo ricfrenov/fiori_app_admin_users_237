@@ -12,7 +12,7 @@ sap.ui.define([
     function (Controller, Label, Input, TextArea, SimpleForm, MessageBox) {
         "use strict";
 
-        return Controller.extend("br.com.gestao.fioriappadmin237.controller.i18n", {
+        return Controller.extend("br.com.gestao.fioriappusers237.controller.i18n", {
             onInit: function () {
 
                 //  this.trocaIdioma();
@@ -39,7 +39,7 @@ sap.ui.define([
                 var i18nModel = new sap.ui.model.resource.ResourceModel({
                     bundleUrl: "i18n/i18n.properties",
                     bundleLocale: "pt",
-                    bundleName: "br.com.gestao.fioriappadmin237.i18n.i18n_pt"
+                    bundleName: "br.com.gestao.fioriappusers237.i18n.i18n_pt"
                 })
                 this.getView().setModel(i18nModel, "i18n");
             }

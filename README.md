@@ -7,7 +7,7 @@
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Floorplan Used**<br>simple|
 |**Service Type**<br>SAP System (ABAP On Premise)|
-|**Service URL**<br>http://vm51.4hub.cloud:55100/sap/opu/odata/sap/ZSB_PRODUCAO_237
+|**Service URL**<br>http://vm51.4hub.cloud:55100/sap/opu/odata/sap/ZUSERS237_SRV
 |**Module Name**<br>fiori_app_report_237|
 |**Application Title**<br>Fiori Report|
 |**Namespace**<br>br.com.gestao|

@@ -3,8 +3,8 @@ sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
-    "br/com/gestao/fioriappadmin237/util/Formatter",
-    "br/com/gestao/fioriappadmin237/util/Validator",
+    "br/com/gestao/fioriappusers237/util/Formatter",
+    "br/com/gestao/fioriappusers237/util/Validator",
     "sap/ui/core/ValueState",
     "sap/m/MessageBox",
     "sap/m/BusyDialog",
@@ -18,7 +18,7 @@ sap.ui.define([
     function (Controller, JSONModel, Filter, FilterOperator, Formatter, Validator, ValueState, MessageBox, BusyDialog, ODataModel, MessageToast, Fragment) {
         "use strict";
 
-        return Controller.extend("br.com.gestao.fioriappadmin237.controller.Lista", {
+        return Controller.extend("br.com.gestao.fioriappusers237.controller.Lista", {
             objFormatter: Formatter,
             //Criar o meu objeto  Router  e acoplar a função que fará o bindingElement
             onInit: function () {
@@ -95,7 +95,7 @@ sap.ui.define([
                 if (!this._CategoriaSearchHelp) {
                     this._CategoriaSearchHelp = Fragment.load({
                         id: oView.getId(),
-                        name: "br.com.gestao.fioriappadmin237.frags.SH_Categorias",
+                        name: "br.com.gestao.fioriappusers237.frags.SH_Categorias",
                         controller: this
                     }).then(function (oDialog) {
                         oView.addDependent(oDialog);
@@ -124,7 +124,7 @@ sap.ui.define([
                 if (!this._Produto) {
                     this._Produto = Fragment.load({
                         id: oView.getId(),
-                        name: "br.com.gestao.fioriappadmin237.frags.Insert",
+                        name: "br.com.gestao.fioriappusers237.frags.Insert",
                         controller: this
                     }).then(function (oDialog) {
                         oView.addDependent(oDialog);

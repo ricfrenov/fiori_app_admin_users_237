@@ -1,112 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
-<edmx:Edmx Version="1.0"
-	xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
-	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-	xmlns:sap="http://www.sap.com/Protocols/SAPData">
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="Org.OData.Measures.V1" Alias="Measures"/>
-	</edmx:Reference>
-	<edmx:Reference Uri="http://vm51.4hub.cloud:55100/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value"
-		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
-		<edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
-	</edmx:Reference>
-	<edmx:DataServices m:DataServiceVersion="2.0">
-		<Schema Namespace="cds_zsd_production_237" xml:lang="pt" sap:schema-version="1"
-			xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-			<EntityType Name="CategoriasType" sap:label="CDS Entity for categories User 237" sap:content-version="1">
+<?xml version="1.0" encoding="UTF-8"?>
+<edmx:Edmx xmlns:sap="http://www.sap.com/Protocols/SAPData" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+
+
+-<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xml:lang="pt" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" sap:schema-version="1" Namespace="ZUSERS237_SRV">
+			<EntityType sap:content-version="1" sap:semantics="subscriptions" Name="Subscription">
 				<Key>
-					<PropertyRef Name="Category"/>
+					<PropertyRef Name="ID"/>
 				</Key>
-				<Property Name="Category" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Tipo de material"/>
-				<Property Name="Description" Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Char" sap:quickinfo="Character field of length 40"/>
+				<Property Name="ID" sap:filterable="false" sap:updatable="false" sap:creatable="false" sap:label="Sub. ID" MaxLength="32" Nullable="false" Type="Edm.String"/>
+				<Property Name="user" sap:filterable="false" sap:creatable="false" sap:label="Nome do usuário" MaxLength="12" Type="Edm.String" m:FC_KeepInContent="false" m:FC_TargetPath="SyndicationAuthorName"/>
+				<Property Name="updated" sap:filterable="false" sap:creatable="false" sap:label="Registro hora" Type="Edm.DateTime" m:FC_KeepInContent="false" m:FC_TargetPath="SyndicationUpdated" Precision="0"/>
+				<Property Name="title" sap:filterable="false" sap:label="Title" MaxLength="255" Type="Edm.String" m:FC_KeepInContent="false" m:FC_TargetPath="SyndicationTitle"/>
+				<Property Name="deliveryAddress" sap:filterable="false" sap:label="Delivery Address" Type="Edm.String"/>
+				<Property Name="persistNotifications" sap:filterable="false" sap:label="Persist Notification" Type="Edm.Boolean"/>
+				<Property Name="collection" sap:filterable="false" sap:label="Collection" MaxLength="40" Type="Edm.String"/>
+				<Property Name="filter" sap:filterable="false" sap:label="Filter" Type="Edm.String"/>
+				<Property Name="select" sap:filterable="false" sap:label="Select" MaxLength="255" Type="Edm.String"/>
+				<Property Name="changeType" sap:label="Change Type" MaxLength="30" Type="Edm.String"/>
 			</EntityType>
-			<EntityType Name="ProdutosType" sap:label="CDS Entity for products User 237" sap:content-version="1">
+			<EntityType sap:content-version="1" sap:semantics="notifications" Name="Notification">
 				<Key>
-					<PropertyRef Name="Productid"/>
+					<PropertyRef Name="ID"/>
 				</Key>
-				<Property Name="Productid" Type="Edm.String" Nullable="false" MaxLength="18" sap:display-format="UpperCase" sap:label="Material" sap:quickinfo="NÂº do material"/>
-				<Property Name="Name" Type="Edm.String" MaxLength="40" sap:label="Texto breve material" sap:quickinfo="Texto breve de material"/>
-				<Property Name="Description" Type="Edm.String" MaxLength="255" sap:display-format="UpperCase" sap:label="char255"/>
-				<Property Name="Category" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Tipo de material"/>
-				<Property Name="Supplierid" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Fabricante" sap:quickinfo="NÂº de um fabricante"/>
-				<Property Name="Measureunit" Type="Edm.String" MaxLength="3" sap:label="Unid.medida bÃ¡sica" sap:quickinfo="Unidade de medida bÃ¡sica" sap:semantics="unit-of-measure"/>
-				<Property Name="Weightmeasure" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="Measureunit" sap:label="Peso lÃ­quido"/>
-				<Property Name="Weightunit" Type="Edm.String" MaxLength="3" sap:label="Unidade de peso" sap:semantics="unit-of-measure"/>
-				<Property Name="Price" Type="Edm.Decimal" Precision="12" Scale="3" sap:unit="Currencycode" sap:label="PreÃ§o standard"/>
-				<Property Name="Currencycode" Type="Edm.String" MaxLength="5" sap:label="Moeda" sap:quickinfo="CÃ³digo da moeda" sap:semantics="currency-code"/>
-				<Property Name="Width" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="Weightunit" sap:label="Largura"/>
-				<Property Name="Depth" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="Weightunit" sap:label="Comprimento"/>
-				<Property Name="Height" Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="Weightunit" sap:label="Altura"/>
-				<Property Name="Dimunit" Type="Edm.String" MaxLength="3" sap:label="Unidade de medida" sap:quickinfo="Unidade para comprimento/largura/altura" sap:semantics="unit-of-measure"/>
-				<Property Name="Createdat" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:quickinfo="Registro da hora UTC em forma breve (AAAAMMDDhhmmss)"/>
-				<Property Name="Changedat" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Ãšltima modificaÃ§Ã£o" sap:quickinfo="Data da Ãºltima modificaÃ§Ã£o"/>
-				<Property Name="Status" Type="Edm.String" MaxLength="2" sap:display-format="UpperCase" sap:label="Componente do nÂº versÃ£o" sap:heading=""/>
-				<Property Name="Usercreate" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Criado por" sap:quickinfo="Nome do responsÃ¡vel que criou o objeto"/>
-				<Property Name="Userupdate" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Modificado por" sap:quickinfo="Nome do responsÃ¡vel pela modificaÃ§Ã£o do objeto"/>
-				<Property Name="Suppliername" Type="Edm.String" MaxLength="35" sap:label="Nome" sap:quickinfo="Nome 1"/>
-				<NavigationProperty Name="to_cat" Relationship="cds_zsd_production_237.assoc_042364A082987AFD73830B9F8AA6CFDE" FromRole="FromRole_assoc_042364A082987AFD73830B9F8AA6CFDE" ToRole="ToRole_assoc_042364A082987AFD73830B9F8AA6CFDE"/>
+				<Property Name="ID" sap:label="Notification ID" MaxLength="32" Nullable="false" Type="Edm.String"/>
+				<Property Name="collection" sap:label="Collection" MaxLength="40" Type="Edm.String"/>
+				<Property Name="title" sap:label="Notif. Text" Type="Edm.String" m:FC_KeepInContent="false" m:FC_TargetPath="SyndicationTitle"/>
+				<Property Name="updated" sap:label="Registro hora" Type="Edm.DateTime" m:FC_KeepInContent="false" m:FC_TargetPath="SyndicationUpdated" Precision="0"/>
+				<Property Name="changeType" sap:label="Change Type" MaxLength="30" Type="Edm.String"/>
+				<Property Name="entriesOfInterest" sap:label="No. of Entries" Type="Edm.Int32"/>
+				<Property Name="recipient" sap:updatable="false" sap:creatable="false" sap:label="Recipient" MaxLength="112" Type="Edm.String"/>
 			</EntityType>
-			<Association Name="assoc_042364A082987AFD73830B9F8AA6CFDE" sap:content-version="1">
-				<End Type="cds_zsd_production_237.ProdutosType" Multiplicity="1" Role="FromRole_assoc_042364A082987AFD73830B9F8AA6CFDE"/>
-				<End Type="cds_zsd_production_237.CategoriasType" Multiplicity="1" Role="ToRole_assoc_042364A082987AFD73830B9F8AA6CFDE"/>
-			</Association>
-			<EntityContainer Name="cds_zsd_production_237_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true" sap:supported-formats="atom json xlsx">
-				<EntitySet Name="Categorias" EntityType="cds_zsd_production_237.CategoriasType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
-				<EntitySet Name="Produtos" EntityType="cds_zsd_production_237.ProdutosType" sap:content-version="1"/>
-				<AssociationSet Name="assoc_042364A082987AFD73830B9F8AA6CFDE" Association="cds_zsd_production_237.assoc_042364A082987AFD73830B9F8AA6CFDE" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
-					<End EntitySet="Produtos" Role="FromRole_assoc_042364A082987AFD73830B9F8AA6CFDE"/>
-					<End EntitySet="Categorias" Role="ToRole_assoc_042364A082987AFD73830B9F8AA6CFDE"/>
-				</AssociationSet>
+			<EntityType sap:content-version="1" Name="Users">
+				<Key>
+					<PropertyRef Name="Userid"/>
+				</Key>
+				<Property Name="Userid" sap:filterable="false" sap:updatable="false" sap:creatable="false" sap:label="Reserva" MaxLength="6" Nullable="false" Type="Edm.String" sap:sortable="false" sap:unicode="false"/>
+				<Property Name="Firstname" sap:filterable="false" sap:updatable="false" sap:creatable="false" sap:label="Campo de caracteres do comprimento 10" MaxLength="10" Nullable="false" Type="Edm.String" sap:sortable="false" sap:unicode="false"/>
+				<Property Name="Lastname" sap:filterable="false" sap:updatable="false" sap:creatable="false" sap:label="Char" MaxLength="40" Nullable="false" Type="Edm.String" sap:sortable="false" sap:unicode="false"/>
+				<Property Name="Email" sap:filterable="false" sap:updatable="false" sap:creatable="false" sap:label="Char" MaxLength="40" Nullable="false" Type="Edm.String" sap:sortable="false" sap:unicode="false"/>
+				<Property Name="Fone" sap:filterable="false" sap:updatable="false" sap:creatable="false" sap:label="char20" MaxLength="20" Nullable="false" Type="Edm.String" sap:sortable="false" sap:unicode="false"/>
+			</EntityType>
+			<EntityContainer Name="ZUSERS237_SRV_Entities" sap:supported-formats="atom json xlsx" m:IsDefaultEntityContainer="true">
+				<EntitySet sap:content-version="1" Name="SubscriptionCollection" EntityType="ZUSERS237_SRV.Subscription"/>
+				<EntitySet sap:content-version="1" Name="NotificationCollection" sap:updatable="false" sap:creatable="false" EntityType="ZUSERS237_SRV.Notification" sap:addressable="false" sap:deletable="false"/>
+				<EntitySet sap:content-version="1" Name="UsersSet" EntityType="ZUSERS237_SRV.Users" sap:requires-filter="true" sap:searchable="true"/>
 			</EntityContainer>
-			<Annotations Target="cds_zsd_production_237.cds_zsd_production_237_Entities"
-				xmlns="http://docs.oasis-open.org/odata/ns/edm">
-				<Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
-				<Annotation Term="Aggregation.ApplySupported">
-					<Record>
-						<PropertyValue Property="Transformations">
-							<Collection>
-								<String>aggregate</String>
-								<String>groupby</String>
-								<String>filter</String>
-							</Collection>
-						</PropertyValue>
-						<PropertyValue Property="Rollup" EnumMember="None"/>
-					</Record>
-				</Annotation>
-			</Annotations>
-			<atom:link rel="self" href="http://vm51.4hub.cloud:55100/sap/opu/odata/sap/ZSB_PRODUCAO_237/$metadata"
-				xmlns:atom="http://www.w3.org/2005/Atom"/>
-				<atom:link rel="latest-version" href="http://vm51.4hub.cloud:55100/sap/opu/odata/sap/ZSB_PRODUCAO_237/$metadata"
-					xmlns:atom="http://www.w3.org/2005/Atom"/>
-				</Schema>
-			</edmx:DataServices>
-		</edmx:Edmx>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="http://vm51.4hub.cloud:55100/sap/opu/odata/sap/ZUSERS237_SRV/$metadata" rel="self"/>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="http://vm51.4hub.cloud:55100/sap/opu/odata/sap/ZUSERS237_SRV/$metadata" rel="latest-version"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
