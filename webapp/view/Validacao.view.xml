@@ -1,0 +1,81 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" controllerName="br.com.gestao.fioriappadmin237.controller.Validacao" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page xmlns="sap.m" id="_IDGenPage1" title="Page Title" floatingFooter="true">
+                    <headerContent>
+                        <Button id="_IDGenButton1" icon="sap-icon://action" tooltip="Share"/>
+                    </headerContent>
+                    <content>
+                        <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" id="_IDGenSimpleForm1" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="1" emptySpanM="1" columnsL="2" columnsM="2">
+                            <sap.ui.layout.form:content>
+
+                                <!--Validação de texto -->
+                                <Label id="_IDGenLabel1" text="Validação texto" width="100%"/>
+                                <Input xmlns="sap.m" id="_IDGenInput1" valueStateText="{i18n>textState}" value="{path: 'MDL_Produto>/Name',
+                                 type: 'sap.ui.model.type.String', constraints: {search: '^[A-Za-z ]*$', minLength: 3, maxLength: 50}}"/>
+
+                                <!--Validação numérica-->
+                                <Label id="_IDGenLabel2" text="Validação numerica" width="100%"/>
+                                <Input xmlns="sap.m" id="_IDGenInput2" valueStateText="{i18n>textState}" type="Number" value="{path: 'MDL_Produto>/Number',                                 
+                                type: 'sap.ui.model.type.String', constraints: {search: '^[0-9]*$', minLength: 3, maxLength: 10}}"/>
+                                
+                                <!--Validação DATA-->
+                                <Label id="_IDGenLabel3"  text="Validação Data" width="100%"/>
+                                <DatePicker xmlns="sap.m" id="picker0" 
+                                value="{path: 'MDL_Produto>/CreatedAt',                                 
+                                type: 'sap.ui.model.type.Date', 
+                                formatOptions: {
+                                    source: {
+                                    pattern:'dd/MM/yyyy'
+                                    },
+                                pattern:'dd/MM/yyyy'
+                                },
+                                constraints:{
+                                    minimum:'01/06/2022'
+                                    }}"/>
+
+                                <!--Validação Moeda-->
+                                <Label id="_IDGenLabel4" text="Validação Moeda" width="100%"/>
+                                <Input id="_IDGenInput3" xmlns="sap.m" valueStateText="{i18n>textState}"  
+                                value="{path: 'MDL_Produto>/Price',                                 
+                                type: 'sap.ui.model.type.Currency', 
+                                constraints:{ minimum: 5, maximum: 10000}}"/>
+                                
+                                <Label id="_IDGenLabel5" text="Validação Moeda 5 casas decimais" width="100%"/>
+                                <Text id="_IDGenText1" text="{path: 'MDL_Produto>/Price',                                 
+                                type: 'sap.ui.model.type.Currency', 
+                                formatOptions: {
+                                    minFractionDigits: 5
+                                    }}"></Text>
+
+                                <!--Validação Float-->
+                                <Label id="_IDGenLabel6"  text="Validação Float" width="100%"/>
+                                <Input id="_IDGenInput4"  xmlns="sap.m" valueStateText="{i18n>textState}"  
+                                value="{path: 'MDL_Produto>/Largura',                                 
+                                type: 'sap.ui.model.type.Float', 
+                                formatOptions: {
+                                    maxFractionDigits: 2,
+                                    minFractionDigits: 3
+                                },
+                                constraints:{
+                                    minimum:5,
+                                    maximum:100
+                                    }}"/>
+
+                            </sap.ui.layout.form:content>
+                        </sap.ui.layout.form:SimpleForm>
+                    </content>
+                    <footer>
+                        <OverflowToolbar id="_IDGenOverflowToolbar1">
+                            <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+                            <Button id="_IDGenButton2" type="Accept" text="Accept" press="onVerModel"/>
+                        </OverflowToolbar>
+
+                    </footer>
+
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

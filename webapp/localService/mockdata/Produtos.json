@@ -1,0 +1,188 @@
+[
+    {
+      "Productid": "PRD-R4341",
+      "Name": "Apple TV",
+      "Description": "Apple TV 4K, 32 GB, Expansível até 1TB, assista todas as suas series, em qualuqer aplicativo de stream, acesso a Apple Store",
+      "Category": "CAT-2345",
+      "Supplierid": "SUP1098998-2",
+      "Measureunit": "UND",
+      "Weightmeasure": 9.85,
+      "Weightunit": "W 1",
+      "Price": 1416.31,
+      "Currencycode": "BRL",
+      "Width": 61.92,
+      "Depth": 13.6,
+      "Height": 60.43,
+      "Dimunit": "D 1",
+      "Createdat": "/Date(967777748000)/",
+      "Changedat": "/Date(1114225748000)/",
+      "Status": "E",
+      "Usercreate": "RNOVAIS",
+      "Userupdate": "RNOVAIS",
+      "Suppliername": "Lojas Camaçari",
+      "__metadata": {
+        "uri": "/Produtos('PRD-R4341')",
+        "type": "cds_zsd_production_237.ProdutosType"
+      },
+      "to_cat": {
+        "__deferred": {
+            "uri": "/Produtos('PRD-R4341')/to_cat"
+        }
+    }
+    },
+    {
+      "Productid": "PRD-R4342",
+      "Name": "Fone de Ouvido",
+      "Description": "Fone de Ouvido JBL, On Ear, Tune 510, Bluetooth, Preto",
+      "Category": "CAT-2343",
+      "Supplierid": "SUP1098998-2",
+      "Measureunit": "UND",
+      "Weightmeasure": 84.86,
+      "Weightunit": "W 2",
+      "Price": 5101.49,
+      "Currencycode": "BRL",
+      "Width": 38.68,
+      "Depth": 10.85,
+      "Height": 88.55,
+      "Dimunit": "D 2",
+      "Createdat": "/Date(1264126148000)/",
+      "Changedat": "/Date(1509156548000)/",
+      "Status": "P",
+      "Usercreate": "RNOVAIS",
+      "Userupdate": "RNOVAIS",
+      "Suppliername": "Lojas Camaçari",
+      "__metadata": {
+        "uri": "/Produtos('PRD-R4342')",
+        "type": "cds_zsd_production_237.ProdutosType"
+      },
+      "to_cat": {
+        "__deferred": {
+            "uri": "/Produtos('PRD-R4342')/to_cat"
+        }
+    }
+    },
+    {
+      "Productid": "PRD-R4343",
+      "Name": "Apple watch",
+      "Description": "Apple Watch Nike SE GPS + Cellular, 44mm Caixa cinza-espacial de alumínio Pulseira esportiva Nike Cinza-carvão/preto",
+      "Category": "CAT-2346",
+      "Supplierid": "SUP1098998-2",
+      "Measureunit": "UND",
+      "Weightmeasure": 23.1,
+      "Weightunit": "W 3",
+      "Price": 8078.05,
+      "Currencycode": "BRL",
+      "Width": 24.62,
+      "Depth": 91.67,
+      "Height": 53.71,
+      "Dimunit": "D 3",
+      "Createdat": "/Date(1149131348000)/",
+      "Changedat": "/Date(1224641348000)/",
+      "Status": "F",
+      "Usercreate": "RNOVAIS",
+      "Userupdate": "RNOVAIS",
+      "Suppliername": "Lojas Camaçari",
+      "__metadata": {
+        "uri": "/Produtos('PRD-R4343')",
+        "type": "cds_zsd_production_237.ProdutosType"
+      },
+      "to_cat": {
+        "__deferred": {
+            "uri": "/Produtos('PRD-R4343')/to_cat"
+        }
+    }
+    },
+    {
+      "Productid": "PRD-R4344",
+      "Name": "TV SAMSUNG",
+      "Description": "Televisão SAMSUNG 90' UHD 8K Cinema em casa, tela AMOLED, 3d, alta resolução, 360Hz",
+      "Category": "CAT-2347",
+      "Supplierid": "SUP1098998-2",
+      "Measureunit": "UND",
+      "Weightmeasure": 53.58,
+      "Weightunit": "W 4",
+      "Price": 37495.46,
+      "Currencycode": "BRL",
+      "Width": 26.71,
+      "Depth": 12,
+      "Height": 52.62,
+      "Dimunit": "D 4",
+      "Createdat": "/Date(1190084948000)/",
+      "Changedat": "/Date(1157684948000)/",
+      "Status": "P",
+      "Usercreate": "RNOVAIS",
+      "Userupdate": "RNOVAIS",
+      "Suppliername": "Lojas Camaçari",
+      "__metadata": {
+        "uri": "/Produtos('PRD-R4344')",
+        "type": "cds_zsd_production_237.ProdutosType"
+      },
+      "to_cat": {
+        "__deferred": {
+            "uri": "/Produtos('PRD-R4344')/to_cat"
+        }
+    }
+    },
+    {
+      "Productid": "PRD-R4345",
+      "Name": "MacBook",
+      "Description": "MacBook Pro Retina Apple 13,3”, 16GB RAM, Prata, SSD 512GB, Intel Core i5, 2.0 GHz, Touch Bar e Touch ID - MWP72BZ/A",
+      "Category": "CAT-2377",
+      "Supplierid": "SUP1098998-2",
+      "Measureunit": "UND",
+      "Weightmeasure": 16.64,
+      "Weightunit": "W 5",
+      "Price": 18293.11,
+      "Currencycode": "BRL",
+      "Width": 84.41,
+      "Depth": 73.2,
+      "Height": 30.52,
+      "Dimunit": "D 5",
+      "Createdat": "/Date(1139191748000)/",
+      "Changedat": "/Date(1405307348000)/",
+      "Status": "E",
+      "Usercreate": "RNOVAIS",
+      "Userupdate": "RNOVAIS",
+      "Suppliername": "Lojas Camaçari",
+      "__metadata": {
+        "uri": "/Produtos('PRD-R4345')",
+        "type": "cds_zsd_production_237.ProdutosType"
+      },
+      "to_cat": {
+        "__deferred": {
+            "uri": "/Produtos('PRD-R4345')/to_cat"
+        }
+    }
+    },
+    {
+      "Productid": "PRD-R4346",
+      "Name": " IPhone",
+      "Description": "IPhone 11 Apple Branco, 64GB Desbloqueado - MHDC3BZ/A, 3GB RAM, tela retina, face ID, processador M1 Quad-Core",
+      "Category": "CAT-2340",
+      "Supplierid": "SUP1098998-2",
+      "Measureunit": "UND",
+      "Weightmeasure": 30.21,
+      "Weightunit": "6",
+      "Price": 5128.04,
+      "Currencycode": "BRL",
+      "Width": 48.54,
+      "Depth": 81.75,
+      "Height": 49.66,
+      "Dimunit": "D 6",
+      "Createdat": "/Date(1154488148000)/",
+      "Changedat": "/Date(965099348000)/",
+      "Status": "F",
+      "Usercreate": "RNOVAIS",
+      "Userupdate": "RNOVAIS",
+      "Suppliername": "Lojas Camaçari",
+      "__metadata": {
+        "uri": "/Produtos('PRD-R4346')",
+        "type": "cds_zsd_production_237.ProdutosType"
+      },
+      "to_cat": {
+        "__deferred": {
+            "uri": "/Produtos('PRD-R4346')/to_cat"
+        }
+    }
+    }
+]

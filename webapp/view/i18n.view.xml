@@ -1,0 +1,39 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" controllerName="br.com.gestao.fioriappadmin237.controller.i18n" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                      
+                    <form:SimpleForm xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+                      
+                        <form:content>
+                      
+                            <sap.ui.core:Title text="{i18n>titleClientes}" id="title00"/>
+                      
+                            <Label text="{i18n>lblCliente}" id="label0"/>
+                      
+                            <Input width="100%" id="cliente" placeholder="{i18n>placeholderCliente}"/>
+                      
+                            <Label text="{i18n>lblEnderecoCliente}" id="label1"/>
+                      
+                            <Input width="100%" id="endereco" placeholder="{i18n>placeholderEnderecoCliente}"/>
+                      
+                            <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" text="{i18n>lblCidadeCliente}" id="label1_copy3"/>
+                      
+                            <Input xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" width="100%" id="cidade" placeholder="{i18n>placeholderCidadeCliente}"/>
+                      
+                            <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" text="{i18n>lblEstadoCliente}" id="label1_copy4"/>
+                      
+                            <Input xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" width="100%" id="estado" placeholder="{i18n>placeholderEstadoCliente}"/>
+                      
+                            <Button xmlns="sap.m" text="{i18n>btnEnviar}" press="enviaCadastro" id="button0" icon="sap-icon://action"/></form:content>
+                      
+                    </form:SimpleForm>
+                      
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

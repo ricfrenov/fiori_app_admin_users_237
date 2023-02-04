@@ -1,0 +1,10 @@
+<mvc:View controllerName="br.com.gestao.fioriappadmin237.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m">
+        <MessagePage id="_IDGenMessagePage1" 
+        title="{i18n>objTitle}"
+        text="{i18n>objText}" 
+        description="{i18n>objDescription}" 
+        icon="sap-icon://error"/>
+</mvc:View>

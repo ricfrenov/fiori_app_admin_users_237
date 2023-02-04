@@ -1,0 +1,50 @@
+[
+    {
+        "Category": "CATa",
+        "Description": "Streams",
+        "__metadata": {
+            "uri": "/Categorias('CATa')",
+            "type": "cds_zsd_production_237.CategoriasType"
+        }
+    },
+    {
+        "Category": "CATb",
+        "Description": "Fones",
+        "__metadata": {
+            "uri": "/Categorias('CATb')",
+            "type": "cds_zsd_production_237.CategoriasType"
+        }
+    },
+    {
+        "Category": "CATc",
+        "Description": "Relógios Smart",
+        "__metadata": {
+            "uri": "/Categorias('CATc')",
+            "type": "cds_zsd_production_237.CategoriasType"
+        }
+    },
+    {
+        "Category": "CATd",
+        "Description": "Tv's",
+        "__metadata": {
+            "uri": "/Categorias('CATd')",
+            "type": "cds_zsd_production_237.CategoriasType"
+        }
+    },
+    {
+        "Category": "CATe",
+        "Description": "Laptops",
+        "__metadata": {
+            "uri": "/Categorias('CATe')",
+            "type": "cds_zsd_production_237.CategoriasType"
+        }
+    },
+    {
+        "Category": "CATf",
+        "Description": "SmartPhones",
+        "__metadata": {
+            "uri": "/Categorias('CATf')",
+            "type": "cds_zsd_production_237.CategoriasType"
+        }
+    }
+]
